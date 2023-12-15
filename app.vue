@@ -1,7 +1,7 @@
 <template>
   <div>
     <header :style="{ backgroundColor: 'rgba(255,255,255,' + opacity + ')' }">
-      <img src="~/assets/image/pplus_text.png" />
+      <img src="~/assets/image/pplus_text.png" alt="피플어스과학학원" />
     </header>
     <NuxtLayout>
       <NuxtPage />
