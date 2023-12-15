@@ -1,7 +1,7 @@
 <template>
   <div>
     <header :style="{ backgroundColor: 'rgba(255,255,255,' + opacity + ')' }">
-      <img src="~/assets/image/pplus.png" />
+      <img src="~/assets/image/pplus_text.png" />
     </header>
     <NuxtLayout>
       <NuxtPage />
