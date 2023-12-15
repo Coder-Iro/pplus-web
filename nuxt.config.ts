@@ -4,10 +4,6 @@ export default defineNuxtConfig({
   typescript: {
     shim: false,
   },
-  modules: ["@nuxt/image"],
-  image: {
-    dir: "assets/image",
-  },
   app: {
     rootId: "__pplus",
     head: {
