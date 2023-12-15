@@ -4,9 +4,18 @@ export default defineNuxtConfig({
   typescript: {
     shim: false,
   },
+  runtimeConfig: {
+    dbHost: "",
+    dbUser: "",
+    dbPassword: "",
+    dbName: "",
+  },
   app: {
     rootId: "__pplus",
     head: {
+      htmlAttrs: {
+        lang: "ko",
+      },
       link: [
         {
           rel: "preconnect",
