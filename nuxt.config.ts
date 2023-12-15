@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     dbPassword: "",
     dbName: "",
   },
+  modules: ["@nuxt/image"],
   app: {
     rootId: "__pplus",
     head: {
