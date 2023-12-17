@@ -1,7 +1,13 @@
 <template>
   <div>
-    <header :style="{ backgroundColor: 'rgba(255,255,255,' + opacity + ')' }">
-      <NuxtImg src="/pplus_text.png" alt="피플어스과학학원" format="webp" />
+    <header>
+      <NuxtLink to="/">
+        <NuxtImg src="/pplus_text.png" alt="피플어스과학학원" format="webp" />
+      </NuxtLink>
+      <div>
+        <NuxtLink to="login">로그인</NuxtLink>
+        <NuxtLink to="register">회원가입</NuxtLink>
+      </div>
     </header>
     <NuxtLayout>
       <NuxtPage />
@@ -9,35 +15,46 @@
   </div>
 </template>
 
-<script setup lang="ts">
-const opacity = ref(0);
-function onscroll() {
-  opacity.value = Math.min(window.scrollY / 100, 1);
+<script setup lang="ts"></script>
+
+<style lang="scss">
+html {
+  overflow: none;
 }
-onBeforeMount(() => {
-  onscroll();
-  window.addEventListener("scroll", onscroll);
-});
-onBeforeUnmount(() => window.removeEventListener("scroll", onscroll));
-</script>
+</style>
 
 <style lang="scss" scoped>
 body {
+  overflow: none;
+  overscroll-behavior-y: none;
   div {
     align-self: center;
-    max-width: 1920px;
     width: 100%;
-    height: 150vh;
-    background-image: linear-gradient(to bottom right, green, blue);
     margin: 0 auto;
     header {
-      position: sticky;
+      position: relative;
       top: 0;
-      height: 100px;
+      height: 90px;
+      width: 100%;
       img {
-        height: 70%;
-        margin: 15px;
-        margin-left: 55px;
+        height: 70px;
+        margin: 10px;
+        margin-left: 40px;
+      }
+      div {
+        height: 100%;
+        float: right;
+        width: auto;
+        align-items: center;
+        border: 3px solid green;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px;
+        a {
+          margin-left: 5px;
+        }
+        &:hover {
+          box-shadow: 5px 5px 5px inset;
+        }
       }
     }
   }
