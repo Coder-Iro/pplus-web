@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     dbName: "",
   },
 
-  modules: ["@nuxt/image", "nuxt-icon"],
+  modules: ["@nuxt/image", "nuxt-icon", "@nuxtjs/tailwindcss"],
 
   app: {
     rootId: "__pplus",
