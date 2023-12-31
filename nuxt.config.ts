@@ -6,6 +6,13 @@ export default defineNuxtConfig({
   typescript: {
     shim: false,
   },
+  css: ["~/assets/css/main.css"],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 
   runtimeConfig: {
     dbHost: "",
@@ -14,7 +21,7 @@ export default defineNuxtConfig({
     dbName: "",
   },
 
-  modules: ["@nuxt/image", "nuxt-icon", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxt/image", "nuxt-icon"],
 
   app: {
     rootId: "__pplus",
@@ -22,6 +29,12 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "ko",
       },
+      meta: [
+        {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1",
+        },
+      ],
       link: [
         {
           rel: "preconnect",

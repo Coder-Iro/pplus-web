@@ -1,5 +1,4 @@
 <template>
-  <img />
   <br />
   <NuxtLink>원장 인사말</NuxtLink><br />
   <NuxtLink>오시는 길</NuxtLink><br />
@@ -17,10 +16,4 @@ useHead({
 });
 </script>
 
-<style lang="scss" scoped>
-img {
-  content: linear-gradient(to right bottom, green, aqua);
-  width: 100%;
-  height: calc(75vh - 90px);
-}
-</style>
+<style lang="scss" scoped></style>

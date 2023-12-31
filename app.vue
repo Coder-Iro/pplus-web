@@ -1,16 +1,20 @@
 <template>
-  <div class="flex flex-col w-screen h-screen justify-center">
-    <header class="navbar shadow fixed top-0 bg-white">
-      <NuxtLink class="navbar-start" to="/">
-        <NuxtImg
-          src="/pplus_text.png"
-          alt="피플어스과학학원"
-          format="webp"
-          width="150px"
-        />
-      </NuxtLink>
-      <NuxtLink to="login">로그인</NuxtLink>
-      <NuxtLink to="register">회원가입</NuxtLink>
+  <div class="flex flex-col w-screen h-svh">
+    <header class="navbar shadow bg-white">
+      <div class="navbar-start">
+        <NuxtLink to="/">
+          <NuxtImg
+            src="/pplus_text.png"
+            alt="피플어스과학학원"
+            format="webp"
+            height="48px"
+          />
+        </NuxtLink>
+      </div>
+      <div class="navbar-end flex gap-2">
+        <NuxtLink class="btn btn-primary" to="login">로그인</NuxtLink>
+        <NuxtLink class="btn btn-primary" to="register">회원가입</NuxtLink>
+      </div>
     </header>
     <div class="flex flex-grow">
       <NuxtPage />

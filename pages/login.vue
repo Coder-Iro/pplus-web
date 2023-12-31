@@ -1,30 +1,32 @@
 <template>
-  <div class="card shadow card-bordered w-[30%] h-min m-auto">
-    <form
-      class="card-body"
-      method="post"
-      action="/api/login"
-      @submit.prevent=""
-      enctype="multipart/form-data"
-    >
-      <div class="card-title">로그인</div>
-      <input
-        name="username"
-        placeholder="아이디"
-        class="input input-bordered my-1"
-      />
-      <input
-        type="password"
-        name="password"
-        placeholder="비밀번호"
-        class="input input-bordered my-1"
-      />
-      <input type="submit" value="로그인" class="btn btn-primary my-1" />
-      <div class="flex grow justify-center gap-4">
-        <span class="text-slate-400">아직 회원이 아니신가요?</span>
-        <NuxtLink to="register" class="link link-primary">회원가입</NuxtLink>
-      </div>
-    </form>
+  <div class="flex flex-grow justify-center items-center">
+    <div class="card shadow card-bordered w-5/6 sm:w-[30%] h-min">
+      <form
+        class="card-body gap-4"
+        method="post"
+        action="/api/login"
+        @submit.prevent=""
+        enctype="multipart/form-data"
+      >
+        <span class="card-title">로그인</span>
+        <input
+          name="username"
+          placeholder="아이디"
+          class="input input-bordered"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="비밀번호"
+          class="input input-bordered"
+        />
+        <button type="submit" class="btn btn-primary">로그인</button>
+        <div class="flex grow justify-center gap-4">
+          <span class="text-slate-400">아직 회원이 아니신가요?</span>
+          <NuxtLink to="register" class="link link-primary">회원가입</NuxtLink>
+        </div>
+      </form>
+    </div>
   </div>
 </template>
 
