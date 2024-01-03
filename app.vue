@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-full h-svh">
+  <div class="flex flex-col w-full h-dvh">
     <header class="navbar shadow backdrop-blur-2xl">
       <div class="navbar-start w-4/6">
         <NuxtLink to="/">
