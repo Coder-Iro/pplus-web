@@ -8,6 +8,7 @@
             alt="피플어스과학학원"
             format="webp"
             height="48px"
+            style="height: 48px"
           />
         </NuxtLink>
       </div>
