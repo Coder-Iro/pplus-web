@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-wrap justify-center">
     <NuxtImg src="schedule/0.jpg" format="webp"></NuxtImg>
     <NuxtImg src="schedule/1.jpg" format="webp"></NuxtImg>
     <NuxtImg src="schedule/2.jpg" format="webp"></NuxtImg>
