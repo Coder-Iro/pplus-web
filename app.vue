@@ -1,27 +1,29 @@
 <template>
   <div class="flex flex-col w-full h-dvh">
-    <header class="navbar shadow backdrop-blur-2xl">
-      <div class="navbar-start w-4/6">
+    <header class="navbar shadow">
+      <div class="navbar-start grow w-auto">
         <NuxtLink to="/">
           <NuxtImg
-            src="/pplus_text.png"
+            src="/pplus_text_new.png"
             alt="피플어스과학학원"
             format="webp"
-            height="48px"
+            height="144px"
+            class="object-contain"
             style="height: 48px"
           />
         </NuxtLink>
       </div>
-      <div class="navbar-end flex gap-2">
-        <NuxtLink class="btn btn-primary" to="login">로그인</NuxtLink>
-        <NuxtLink class="btn btn-primary hidden sm:inline-flex" to="register"
+      <div class="navbar-end w-auto flex grow-0 shrink-0 gap-0 sm:gap-2 ml-3">
+        <NuxtLink class="btn btn-primary" to="/login">로그인</NuxtLink>
+        <NuxtLink class="btn btn-primary hidden sm:inline-flex" to="/register"
           >회원가입</NuxtLink
         >
       </div>
     </header>
-    <div class="flex basis-full">
+    <div class="flex grow justify-center items-stretch">
       <NuxtPage />
     </div>
+    <div class="bg-slate-500 min-h-6"></div>
   </div>
 </template>
 

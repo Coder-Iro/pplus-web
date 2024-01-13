@@ -10,21 +10,21 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@nuxtjs/tailwindcss": "^6.10.3",
+    "@nuxt/devtools": "^1.0.8",
+    "@nuxtjs/tailwindcss": "^6.10.4",
     "autoprefixer": "^10.4.16",
-    "nuxt": "^3.8.2",
-    "prettier": "^3.1.1",
-    "sass": "^1.69.5",
-    "vue": "^3.3.13",
+    "nuxt": "^3.9.1",
+    "prettier": "^3.2.1",
+    "sass": "^1.69.7",
+    "vue": "^3.4.13",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
     "@lucia-auth/adapter-mysql": "^2.1.0",
-    "@nuxt/image": "^1.1.0",
-    "daisyui": "^4.4.23",
+    "@nuxt/image": "^1.2.0",
+    "daisyui": "^4.6.0",
     "lucia": "^2.7.6",
-    "mysql2": "^3.6.5",
-    "nuxt-icon": "^0.6.7"
+    "mysql2": "^3.7.0",
+    "nuxt-icon": "^0.6.8"
   }
 }

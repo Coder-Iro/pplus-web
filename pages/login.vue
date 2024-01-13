@@ -1,8 +1,11 @@
 <template>
-  <div class="flex w-screen justify-center items-center back">
-    <div
-      class="card backdrop-blur-2xl shadow-2xl w-11/12 sm:w-1/2 lg:w-[30%] h-min"
-    >
+  <div
+    class="flex w-screen justify-center items-center bg-left-bottom bg-no-repeat bg-cover"
+    :style="{
+      backgroundImage: `url(${background})`,
+    }"
+  >
+    <div class="card glass shadow-2xl w-11/12 md:w-1/2 xl:w-[30%] h-min">
       <form
         class="card-body gap-4"
         method="post"
@@ -34,13 +37,6 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
-
-<style scoped>
-div.back {
-  background-image: url("/back2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
+<script setup lang="ts">
+import background from "~/assets/img/background3.jpg";
+</script>
