@@ -34,7 +34,7 @@
     >
       공지사항
     </div>
-    <div class="flex">
+    <div class="flex hidden md:block">
       <div class="pr-5" style="float: left; width: 212px; height: 100%">
         <!-- ���̵�� ���� �׺���̼� �޴�-->
         <div id="side_cssmenu" style="border-right: 1px solid #f6f6f6">
