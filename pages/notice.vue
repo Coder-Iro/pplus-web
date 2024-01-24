@@ -3,7 +3,7 @@
     <div class="text-sm breadcrumbs w-full">
       <ul>
         <li>
-          <NuxtLink>
+          <NuxtLink to="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -35,7 +35,10 @@
       공지사항
     </div>
     <div class="flex">
-      <div class="pr-5 hidden md:block" style="float: left; width: 212px; height: 100%">
+      <div
+        class="pr-5 hidden md:block"
+        style="float: left; width: 212px; height: 100%"
+      >
         <!-- ���̵�� ���� �׺���̼� �޴�-->
         <div id="side_cssmenu" style="border-right: 1px solid #f6f6f6">
           <div
@@ -92,12 +95,12 @@
       </div>
       <table class="table table-sm table-pin-rows">
         <colgroup>
-          <col />
+          <col class="hidden md:table-column" />
           <col class="w-screen" />
         </colgroup>
         <thead>
           <tr class="bg-slate-100">
-            <th class="text-center">번호</th>
+            <th class="text-center hidden md:table-cell">번호</th>
             <th class="text-center">제목</th>
             <th class="text-center">글쓴이</th>
             <th class="text-center">날짜</th>
@@ -105,7 +108,7 @@
         </thead>
         <tbody>
           <tr v-for="index in 20">
-            <td>{{ index }}</td>
+            <td class="hidden md:table-cell">{{ index }}</td>
             <th>Cy Ganderton</th>
             <td>철쌤</td>
             <td>2023.12.07</td>
@@ -123,7 +126,7 @@
 </template>
 
 <script lang="ts" setup>
-import hero from "~/assets/img/heo.jpg";
+import hero from "~/assets/img/hero.jpg";
 </script>
 
 <style></style>

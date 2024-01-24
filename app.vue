@@ -31,7 +31,7 @@
 useHead({ title: "피플어스과학학원" });
 </script>
 
-<style lang="scss">
+<style>
 body {
   margin: 0;
   font-family:

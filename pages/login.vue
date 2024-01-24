@@ -13,7 +13,7 @@
         @submit.prevent=""
         enctype="multipart/form-data"
       >
-        <span class="card-title">로그인</span>
+        <span class="card-title text-2xl">로그인</span>
         <input
           name="username"
           placeholder="아이디"
