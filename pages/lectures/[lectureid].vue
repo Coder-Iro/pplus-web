@@ -46,7 +46,7 @@
       <thead>
         <tr class="bg-slate-100">
           <th class="text-center hidden md:table-cell rounded-tl-lg">번호</th>
-          <th class="text-center md:rounded-tl-lg">제목</th>
+          <th class="text-center rounded-tl-lg md:rounded-tl-none">제목</th>
           <th class="text-center">글쓴이</th>
           <th class="text-center rounded-tr-lg">날짜</th>
         </tr>
