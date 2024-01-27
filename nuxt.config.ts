@@ -1,21 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: {
-    enabled: false,
-  },
+  devtools: { enabled: false },
   typescript: {
     shim: false,
   },
-
-  runtimeConfig: {
-    dbHost: "",
-    dbUser: "",
-    dbPassword: "",
-    dbName: "",
-  },
-
   modules: ["@nuxtjs/tailwindcss", "@nuxt/image", "nuxt-icon"],
-
+  image: { quality: 100 },
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) =>
+        ["swiper-slide", "swiper-container"].includes(tag),
+    },
+  },
   app: {
     rootId: "__pplus",
     head: {

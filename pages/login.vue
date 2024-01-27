@@ -1,11 +1,11 @@
 <template>
   <div
-    class="flex w-screen justify-center items-center bg-left-bottom bg-no-repeat bg-cover"
+    class="flex w-screen items-center justify-center bg-cover bg-left-bottom bg-no-repeat"
     :style="{
-      backgroundImage: `url(${background})`,
+      backgroundImage: `url(${bgimage})`,
     }"
   >
-    <div class="card glass shadow-2xl w-11/12 md:w-1/2 xl:w-[30%] h-min">
+    <div class="card glass h-min w-11/12 shadow-2xl md:w-1/2 xl:w-[30%]">
       <form
         class="card-body gap-4"
         method="post"
@@ -28,7 +28,7 @@
           autocomplete="current-password"
         />
         <button type="submit" class="btn btn-primary">로그인</button>
-        <div class="flex grow flex-wrap justify-center items-center gap-4">
+        <div class="flex grow flex-wrap items-center justify-center gap-4">
           <span class="">아직 회원이 아니신가요?</span>
           <NuxtLink to="register" class="link link-primary">회원가입</NuxtLink>
         </div>
@@ -37,6 +37,9 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import background from "~/assets/img/background3.jpg";
+<script lang="ts" setup>
+const img = useImage();
+const bgimage = img("/img/authbg.jpg", { format: "webp" });
 </script>
+
+<style scoped></style>
